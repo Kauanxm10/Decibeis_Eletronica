@@ -59,27 +59,6 @@ Antes de iniciar, certifique-se de que seu ambiente (local ou produção) tenha:
 
 ---
 
-### 🗄️ Banco de Dados
-1. Crie um banco de dados MySQL com o nome:
-   ```
-   decibeis_eletronica
-   ```
-2. Execute o script SQL fornecido anteriormente para criar todas as tabelas e inserir os dados iniciais.
-
----
-
-### 🔐 Configuração de Credenciais
-No arquivo `includes/db_connect.php`, atualize as credenciais conforme seu ambiente:
-
-```php
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'decibeis_eletronica');
-define('DB_USER', 'seu_usuario');
-define('DB_PASS', 'sua_senha');
-```
-
----
-
 ### ☁️ Upload dos Arquivos
 1. Faça o upload de todos os arquivos do projeto para o diretório raiz do seu servidor web.  
 2. Verifique se as permissões estão corretas para leitura e execução dos arquivos PHP.
