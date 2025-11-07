@@ -1,0 +1,10 @@
+Permite que todos os robôs acessem e indexem o site
+User-agent: *
+Allow: /
+
+Define qual é a versão principal do domínio (host canônico)
+O Host deve ser a versão Punycode real do seu domínio com acento:
+Host: https://www.google.com/search?q=https://xn--decibiseletrnica-fqb9r.com.br/
+
+Informa a localização do Sitemap
+Sitemap: https://www.google.com/search?q=https://xn--decibiseletrnica-fqb9r.com.br/sitemap.xml

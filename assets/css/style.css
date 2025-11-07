@@ -1,0 +1,385 @@
+/* Decibéis Eletrônica - Custom CSS (Final Version) */
+
+/* Variáveis de Cores */
+:root {
+    --primary-black: #000000;
+    --secondary-black: #1a1a1a;
+    --dark-gray: #2d2d2d;
+    --light-gray: #666666;
+    --warning-yellow: #ffc107;
+    --success-green: #28a745;
+    --white: #ffffff;
+    --white-50: rgba(255, 255, 255, 0.5);
+}
+
+/* Base Styles */
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--primary-black);
+    color: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.text-white-50 {
+    color: var(--white-50) !important;
+}
+
+/* Sections & General Spacing */
+.py-5.bg-dark, .py-5.bg-secondary {
+    padding-top: 3rem !important;
+    padding-bottom: 5rem !important;
+}
+
+
+/* Navigation & Header */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--secondary-black) !important;
+    z-index: 1050;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Logo na Navegação */
+.navbar-logo {
+    height: 35px; /* Altura da logo */
+    vertical-align: middle;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-black) 0%, var(--secondary-black) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 100px; /* Compensação para navbar fixo */
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+/* Estilos para imagens (Hero e Carrossel) */
+.hero-image img, 
+.carousel-inner img {
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* --- ESTILOS BASE PARA CARDS DE CONTEÚDO (Fundo Escuro) --- */
+
+.service-card,
+.mission-card,
+.partner-card,
+.stat-card,
+.feature-card,
+.problem-card,
+.maintenance-card,
+.news-card,
+.location-info,
+.contact-form-container,
+.schedule-card {
+    background-color: var(--dark-gray);
+    padding: 2rem;
+    border-radius: 10px;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Efeitos de Hover para Cards */
+.service-card:hover,
+.mission-card:hover,
+.partner-card:hover,
+.feature-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Icons for Cards */
+.service-icon,
+.mission-icon,
+.partner-logo,
+.feature-icon,
+.problem-icon,
+.maintenance-icon {
+    font-size: 3rem;
+    color: var(--warning-yellow);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.feature-icon {
+    font-size: 2.5rem;
+}
+
+
+/* News Cards (Carrossel de Notícias) */
+.news-card {
+    padding: 3rem 2rem; 
+    transition: box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.news-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.news-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* --- FAQ STYLES --- */
+.accordion-item {
+    background-color: var(--dark-gray);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.accordion-button {
+    background-color: var(--secondary-black);
+    color: var(--white);
+    border: none;
+    font-weight: 600;
+    padding: 1.5rem;
+    box-shadow: none; 
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--warning-yellow);
+    color: var(--primary-black);
+    box-shadow: none;
+}
+
+.accordion-body {
+    background-color: var(--dark-gray);
+    padding: 1.5rem;
+}
+
+.faq-answer {
+    color: var(--white-50);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.faq-answer i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+/* --- END FAQ STYLES --- */
+
+
+/* Location Info Sidebar */
+.map-container {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Informações de Contato - Alinhamento Fixo */
+.contact-item {
+    display: flex;
+    /* Alinha os itens (ícone e bloco de texto) verticalmente ao centro */
+    align-items: center; 
+    margin-bottom: 1.5rem;
+}
+
+/* Ícones de contato com fundo amarelo */
+.contact-info .contact-icon {
+    background-color: var(--warning-yellow);
+    color: var(--primary-black);
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+/* CORREÇÃO FINAL AQUI: Força o alinhamento de texto e remove margens desnecessárias */
+.contact-details {
+    text-align: left;
+    margin-top: 0; 
+}
+
+.contact-details h6 {
+    margin-bottom: 0.1rem; /* Reduz a margem entre o título (h6) e o valor (p) */
+    color: var(--warning-yellow); /* Garante que o Endereço/Telefone/Horário seja amarelo */
+}
+
+.contact-details p {
+    margin-bottom: 0; /* Remove a margem extra do parágrafo */
+    line-height: 1.2;
+}
+
+/* Contact Form */
+.contact-form .form-control,
+.contact-form .form-select {
+    background-color: var(--secondary-black);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    background-color: var(--secondary-black);
+    border-color: var(--warning-yellow);
+    color: var(--white);
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+/* Buttons and Links */
+.btn-warning {
+    background-color: var(--warning-yellow);
+    border-color: var(--warning-yellow);
+    color: var(--primary-black);
+    font-weight: 600;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+    color: var(--primary-black);
+}
+
+/* Footer Social Links */
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--warning-yellow);
+    color: var(--primary-black);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+
+/* --- ESTILOS DE PÁGINAS TÉCNICAS --- */
+
+.tech-card {
+    text-align: left; 
+    overflow: hidden;
+    padding: 0; 
+}
+
+.tech-header {
+    background-color: var(--secondary-black);
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--warning-yellow);
+}
+
+.tech-content {
+    padding: 1.5rem;
+    background-color: var(--dark-gray); 
+}
+
+.tech-list,
+.maintenance-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 0;
+}
+
+.tech-list li,
+.maintenance-list li {
+    padding: 0.5rem 0;
+    color: var(--white-50);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-list li strong {
+    color: var(--white);
+}
+
+.schedule-card h5 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem; 
+}
+
+/* Processo de Atendimento (Passos) */
+.process-step { 
+    padding: 0; 
+    background: none; 
+    border: none;
+    height: auto;
+    transition: none;
+}
+
+.process-step-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--warning-yellow); 
+    margin-bottom: 0.5rem;
+}
+
+.process-step-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white); 
+    margin-bottom: 0.5rem;
+}
+
+.process-step-description {
+    color: var(--white-50);
+    line-height: 1.4;
+}
+/* FIM DOS ESTILOS DE PÁGINAS TÉCNICAS */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .location-info {
+        padding-bottom: 2rem !important; 
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Accessibility & Utility Cleanup */
+.btn:focus,
+.form-control:focus,
+.form-select:focus {
+    outline: 2px solid var(--warning-yellow);
+    outline-offset: 2px;
+}

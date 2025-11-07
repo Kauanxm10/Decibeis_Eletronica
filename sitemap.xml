@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+<!-- Pagina Inicial - Prioridade Máxima -->
+<url>
+    <loc>https://xn--decibiseletrnica-fqb9r.com.br/index.php</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+</url>
+
+<!-- Paginas de Serviço e Informação (Alta Prioridade) -->
+<url>
+    <loc>https://xn--decibiseletrnica-fqb9r.com.br/technical.php</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://xn--decibiseletrnica-fqb9r.com.br/about.php</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<!-- Paginas de Contato e FAQ -->
+<url>
+    <loc>https://xn--decibiseletrnica-fqb9r.com.br/contact.php</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>
+<url>
+    <loc>https://xn--decibiseletrnica-fqb9r.com.br/faq.php</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>
+
+</urlset>

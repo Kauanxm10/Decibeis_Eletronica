@@ -1,0 +1,16 @@
+[18-Jul-2025 23:53:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/config.php on line 19
+[18-Jul-2025 23:53:23 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/config.php on line 20
+[18-Jul-2025 23:53:23 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/config.php on line 21
+[18-Jul-2025 23:53:23 UTC] PHP Warning:  Undefined variable $pdo in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/contact.php on line 92
+[18-Jul-2025 23:53:23 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/contact.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/contact.php on line 92
+[18-Jul-2025 23:57:21 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/config.php on line 19
+[18-Jul-2025 23:57:21 UTC] PHP Warning:  ini_set(): Session ini settings cannot be changed when a session is active in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/config.php on line 20
+[18-Jul-2025 23:57:21 UTC] PHP Notice:  session_start(): Ignoring session_start() because a session is already active in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/config.php on line 21
+[18-Jul-2025 23:57:21 UTC] PHP Warning:  Undefined variable $pdo in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/contact.php on line 92
+[18-Jul-2025 23:57:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/contact.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/u164264430/domains/aliceblue-spider-223055.hostingersite.com/public_html/contact.php on line 92
